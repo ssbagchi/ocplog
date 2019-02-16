@@ -1,0 +1,33 @@
+DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7.
+Collecting awscli
+  Downloading https://files.pythonhosted.org/packages/36/d4/20fdf29d00349e20d68e5d512ba4d52490fb63b45ea86a03b36f81f1a9d2/awscli-1.16.106-py2.py3-none-any.whl (1.4MB)
+Collecting colorama<=0.3.9,>=0.2.5 (from awscli)
+  Downloading https://files.pythonhosted.org/packages/db/c8/7dcf9dbcb22429512708fe3a547f8b6101c0d02137acbd892505aee57adf/colorama-0.3.9-py2.py3-none-any.whl
+Collecting rsa<=3.5.0,>=3.1.2 (from awscli)
+  Downloading https://files.pythonhosted.org/packages/e1/ae/baedc9cb175552e95f3395c43055a6a5e125ae4d48a1d7a924baca83e92e/rsa-3.4.2-py2.py3-none-any.whl (46kB)
+Collecting botocore==1.12.96 (from awscli)
+  Downloading https://files.pythonhosted.org/packages/01/bd/25e57c0b7821f5ced18f2e392b60c0c626cb10ae545946a58b0d2d86aa44/botocore-1.12.96-py2.py3-none-any.whl (5.3MB)
+Collecting docutils>=0.10 (from awscli)
+  Downloading https://files.pythonhosted.org/packages/50/09/c53398e0005b11f7ffb27b7aa720c617aba53be4fb4f4f3f06b9b5c60f28/docutils-0.14-py2-none-any.whl (543kB)
+Collecting s3transfer<0.3.0,>=0.2.0 (from awscli)
+  Downloading https://files.pythonhosted.org/packages/d7/de/5737f602e22073ecbded7a0c590707085e154e32b68d86545dcc31004c02/s3transfer-0.2.0-py2.py3-none-any.whl (69kB)
+Requirement already satisfied: PyYAML<=3.13,>=3.10 in /usr/lib64/python2.7/site-packages (from awscli) (3.10)
+Collecting pyasn1>=0.1.3 (from rsa<=3.5.0,>=3.1.2->awscli)
+  Downloading https://files.pythonhosted.org/packages/7b/7c/c9386b82a25115cccf1903441bba3cbadcfae7b678a20167347fa8ded34c/pyasn1-0.4.5-py2.py3-none-any.whl (73kB)
+Collecting jmespath<1.0.0,>=0.7.1 (from botocore==1.12.96->awscli)
+  Downloading https://files.pythonhosted.org/packages/b7/31/05c8d001f7f87f0f07289a5fc0fc3832e9a57f2dbd4d3b0fee70e0d51365/jmespath-0.9.3-py2.py3-none-any.whl
+Collecting python-dateutil<3.0.0,>=2.1; python_version >= "2.7" (from botocore==1.12.96->awscli)
+  Downloading https://files.pythonhosted.org/packages/41/17/c62faccbfbd163c7f57f3844689e3a78bae1f403648a6afb1d0866d87fbb/python_dateutil-2.8.0-py2.py3-none-any.whl (226kB)
+Collecting urllib3<1.25,>=1.20; python_version == "2.7" (from botocore==1.12.96->awscli)
+  Downloading https://files.pythonhosted.org/packages/62/00/ee1d7de624db8ba7090d1226aebefab96a2c71cd5cfa7629d6ad3f61b79e/urllib3-1.24.1-py2.py3-none-any.whl (118kB)
+Collecting futures<4.0.0,>=2.2.0; python_version == "2.6" or python_version == "2.7" (from s3transfer<0.3.0,>=0.2.0->awscli)
+  Downloading https://files.pythonhosted.org/packages/2d/99/b2c4e9d5a30f6471e410a146232b4118e697fa3ffc06d6a65efde84debd0/futures-3.2.0-py2-none-any.whl
+Requirement already satisfied: six>=1.5 in /usr/lib/python2.7/site-packages (from python-dateutil<3.0.0,>=2.1; python_version >= "2.7"->botocore==1.12.96->awscli) (1.9.0)
+Installing collected packages: colorama, pyasn1, rsa, jmespath, docutils, python-dateutil, urllib3, botocore, futures, s3transfer, awscli
+  Found existing installation: python-dateutil 1.5
+    Uninstalling python-dateutil-1.5:
+      Successfully uninstalled python-dateutil-1.5
+  Found existing installation: urllib3 1.10.2
+    Uninstalling urllib3-1.10.2:
+      Successfully uninstalled urllib3-1.10.2
+Successfully installed awscli-1.16.106 botocore-1.12.96 colorama-0.3.9 docutils-0.14 futures-3.2.0 jmespath-0.9.3 pyasn1-0.4.5 python-dateutil-2.8.0 rsa-3.4.2 s3transfer-0.2.0 urllib3-1.24.1

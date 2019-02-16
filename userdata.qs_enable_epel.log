@@ -1,0 +1,72 @@
++ qs_get-ostype INSTANCE_OSTYPE
++ local __return=INSTANCE_OSTYPE
++ DETECTION_STRING='/etc/*-release'
+++ ls /etc/os-release /etc/redhat-release /etc/system-release
++ [[ -n /etc/os-release
+/etc/redhat-release
+/etc/system-release ]]
+++ cat /etc/os-release /etc/redhat-release /etc/system-release
+++ grep '^ID='
+++ tr -cd '[:alpha:]'
+++ awk -F= '{print $2}'
++ OS=rhel
++ '[' 0 -eq 0 ']'
++ '[' INSTANCE_OSTYPE ']'
++ eval INSTANCE_OSTYPE=rhel
+++ INSTANCE_OSTYPE=rhel
++ return 0
++ qs_get-osversion INSTANCE_OSVERSION
++ local __return=INSTANCE_OSVERSION
++ DETECTION_STRING='/etc/*-release'
+++ ls /etc/os-release /etc/redhat-release /etc/system-release
++ [[ -n /etc/os-release
+/etc/redhat-release
+/etc/system-release ]]
+++ grep VERSION_ID
+++ cat /etc/os-release /etc/redhat-release /etc/system-release
+++ awk -F= '{print $2}'
+++ tr -d '"'
++ OSLEVEL=7.5
++ '[' 0 -eq 0 ']'
++ '[' INSTANCE_OSVERSION ']'
++ eval INSTANCE_OSVERSION=7.5
+++ INSTANCE_OSVERSION=7.5
++ return 0
++ echo '[INFO] Enable epel-release-latest-7'
+[INFO] Enable epel-release-latest-7
++ '[' rhel == rhel ']'
++ yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+Loaded plugins: amazon-id, rhui-lb, search-disabled-repos
+Examining /var/tmp/yum-root-5xqdhM/epel-release-latest-7.noarch.rpm: epel-release-7-11.noarch
+Marking /var/tmp/yum-root-5xqdhM/epel-release-latest-7.noarch.rpm to be installed
+Resolving Dependencies
+--> Running transaction check
+---> Package epel-release.noarch 0:7-11 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package          Arch       Version    Repository                         Size
+================================================================================
+Installing:
+ epel-release     noarch     7-11       /epel-release-latest-7.noarch      24 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total size: 24 k
+Installed size: 24 k
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : epel-release-7-11.noarch                                     1/1 
+  Verifying  : epel-release-7-11.noarch                                     1/1 
+
+Installed:
+  epel-release.noarch 0:7-11                                                    
+
+Complete!

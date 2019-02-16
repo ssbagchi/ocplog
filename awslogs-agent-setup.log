@@ -1,0 +1,55 @@
+
+Version 1.4.3 Install Starting
+DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7.
+Collecting virtualenv
+  Downloading https://files.pythonhosted.org/packages/7e/1b/6c00d57127608793e16e8b7f813e64d58a1938505c42fe190d1386ab41e1/virtualenv-16.4.0-py2.py3-none-any.whl (2.0MB)
+Installing collected packages: virtualenv
+Successfully installed virtualenv-16.4.0
+/bin/virtualenv
+New python executable in /var/awslogs/bin/python
+Installing setuptools, pip, wheel...
+done.
+DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7.
+Collecting pip<7.0.0
+  Downloading https://files.pythonhosted.org/packages/67/f0/ba0fb41dbdbfc4aa3e0c16b40269aca6b9e3d59cacdb646218aa2e9b1d2c/pip-6.1.1-py2.py3-none-any.whl (1.1MB)
+Installing collected packages: pip
+  Found existing installation: pip 19.0.2
+    Uninstalling pip-19.0.2:
+      Successfully uninstalled pip-19.0.2
+Successfully installed pip-6.1.1
+You are using pip version 6.1.1, however version 19.0.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Collecting awscli-cwlogs==1.4.4
+  Downloading https://files.pythonhosted.org/packages/19/42/a9b75f2bbd7b05b28c529e504a0aa9e32d621489a04489a095515607bde3/awscli-cwlogs-1.4.4.tar.gz
+Collecting awscli>=1.11.41 (from awscli-cwlogs==1.4.4)
+  Downloading https://files.pythonhosted.org/packages/36/d4/20fdf29d00349e20d68e5d512ba4d52490fb63b45ea86a03b36f81f1a9d2/awscli-1.16.106-py2.py3-none-any.whl (1.4MB)
+Collecting six>=1.1.0 (from awscli-cwlogs==1.4.4)
+  Downloading https://files.pythonhosted.org/packages/73/fb/00a976f728d0d1fecfe898238ce23f502a721c0ac0ecfedb80e0d88c64e9/six-1.12.0-py2.py3-none-any.whl
+Collecting python-dateutil>=2.1 (from awscli-cwlogs==1.4.4)
+  Downloading https://files.pythonhosted.org/packages/41/17/c62faccbfbd163c7f57f3844689e3a78bae1f403648a6afb1d0866d87fbb/python_dateutil-2.8.0-py2.py3-none-any.whl (226kB)
+Collecting botocore==1.12.96 (from awscli>=1.11.41->awscli-cwlogs==1.4.4)
+  Downloading https://files.pythonhosted.org/packages/01/bd/25e57c0b7821f5ced18f2e392b60c0c626cb10ae545946a58b0d2d86aa44/botocore-1.12.96-py2.py3-none-any.whl (5.3MB)
+Collecting colorama<=0.3.9,>=0.2.5 (from awscli>=1.11.41->awscli-cwlogs==1.4.4)
+  Downloading https://files.pythonhosted.org/packages/db/c8/7dcf9dbcb22429512708fe3a547f8b6101c0d02137acbd892505aee57adf/colorama-0.3.9-py2.py3-none-any.whl
+Collecting docutils>=0.10 (from awscli>=1.11.41->awscli-cwlogs==1.4.4)
+  Downloading https://files.pythonhosted.org/packages/50/09/c53398e0005b11f7ffb27b7aa720c617aba53be4fb4f4f3f06b9b5c60f28/docutils-0.14-py2-none-any.whl (543kB)
+Collecting PyYAML<=3.13,>=3.10 (from awscli>=1.11.41->awscli-cwlogs==1.4.4)
+  Downloading https://files.pythonhosted.org/packages/9e/a3/1d13970c3f36777c583f136c136f804d70f500168edc1edea6daa7200769/PyYAML-3.13.tar.gz (270kB)
+Collecting rsa<=3.5.0,>=3.1.2 (from awscli>=1.11.41->awscli-cwlogs==1.4.4)
+  Downloading https://files.pythonhosted.org/packages/e1/ae/baedc9cb175552e95f3395c43055a6a5e125ae4d48a1d7a924baca83e92e/rsa-3.4.2-py2.py3-none-any.whl (46kB)
+Collecting s3transfer<0.3.0,>=0.2.0 (from awscli>=1.11.41->awscli-cwlogs==1.4.4)
+  Downloading https://files.pythonhosted.org/packages/d7/de/5737f602e22073ecbded7a0c590707085e154e32b68d86545dcc31004c02/s3transfer-0.2.0-py2.py3-none-any.whl (69kB)
+Collecting jmespath<1.0.0,>=0.7.1 (from botocore==1.12.96->awscli>=1.11.41->awscli-cwlogs==1.4.4)
+  Downloading https://files.pythonhosted.org/packages/b7/31/05c8d001f7f87f0f07289a5fc0fc3832e9a57f2dbd4d3b0fee70e0d51365/jmespath-0.9.3-py2.py3-none-any.whl
+Collecting urllib3<1.25,>=1.20 (from botocore==1.12.96->awscli>=1.11.41->awscli-cwlogs==1.4.4)
+  Downloading https://files.pythonhosted.org/packages/62/00/ee1d7de624db8ba7090d1226aebefab96a2c71cd5cfa7629d6ad3f61b79e/urllib3-1.24.1-py2.py3-none-any.whl (118kB)
+Collecting pyasn1>=0.1.3 (from rsa<=3.5.0,>=3.1.2->awscli>=1.11.41->awscli-cwlogs==1.4.4)
+  Downloading https://files.pythonhosted.org/packages/7b/7c/c9386b82a25115cccf1903441bba3cbadcfae7b678a20167347fa8ded34c/pyasn1-0.4.5-py2.py3-none-any.whl (73kB)
+Collecting futures<4.0.0,>=2.2.0 (from s3transfer<0.3.0,>=0.2.0->awscli>=1.11.41->awscli-cwlogs==1.4.4)
+  Downloading https://files.pythonhosted.org/packages/2d/99/b2c4e9d5a30f6471e410a146232b4118e697fa3ffc06d6a65efde84debd0/futures-3.2.0-py2-none-any.whl
+Installing collected packages: jmespath, urllib3, six, python-dateutil, docutils, botocore, colorama, PyYAML, pyasn1, rsa, futures, s3transfer, awscli, awscli-cwlogs
+  Running setup.py install for PyYAML
+  Running setup.py install for awscli-cwlogs
+Successfully installed PyYAML-3.13 awscli-1.16.106 awscli-cwlogs-1.4.4 botocore-1.12.96 colorama-0.3.9 docutils-0.14 futures-3.2.0 jmespath-0.9.3 pyasn1-0.4.5 python-dateutil-2.8.0 rsa-3.4.2 s3transfer-0.2.0 six-1.12.0 urllib3-1.24.1
+Reloading systemd:  [  OK  ]
+Restarting awslogs (via systemctl):  [  OK  ]
